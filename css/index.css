@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient(#264471, #051427);
+    overflow-x: hidden;
+}
+
+.profile_why_section{
+    background-image: url('../img/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    padding: 200px 0;
+
+}
+.mission-section{
+    background-image: url('../img/bg-5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    padding: 150px 0;
+}
+
+
+.sponsors{
+    background: linear-gradient(180deg, #121133    0%, #100F2F 100%);
+    padding: 50px;
+}
+.sponsor{
+    width: 100%;
+    height: 50px;
+
+}
+.sponsor-list{
+   
+    border-radius: 10px;
+    padding : 20px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    text-overflow: none;
+ 
+}
+.promise {
+    color: white ;
+    font-weight: 500;
+    background-image: radial-gradient(#2b4d81, #061931);
+
+    border-radius: 10px;
+    padding : 15px 15px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px;
+    text-overflow: none;
+  box-shadow: 1px 1px 5px  black;
+
+}
+.promise-logo{
+    width : 48px ;
+}
+
+.why-text{
+    color: white ;
+    font-weight: 500;
+    background-image: radial-gradient(#264471, #051427);
+    border : 1px solid #24DDDC;
+    border-radius: 10px;
+    padding : 20px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px;
+    text-overflow: none;
+  box-shadow: 1px 1px 10px 2px black,  1px 1px 5px #24DDDC inset;
+
+}
+.data{
+    color: white ;
+    font-weight: 500;
+    border: 1px solid #24DDDC;
+    padding : 20px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px;
+    text-overflow: none;
+  box-shadow: 1px 1px 10px 2px black,  1px 1px 5px #24DDDC inset;
+
+}
+.data-box{
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position : absolute;
+    top : 650px;
+}
+.Why{
+    padding-bottom:  100px !important;
+    margin-bottom:  100px;
+}
+
+svg {
+    max-width: 300px;
+   
+}
+
+
+footer{
+    background-color: #051429;
+    font-weight: 200;
+    color : white;
+  font-weight: 100;
+
+    
+}
+.profile-svg {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.profile-name{
+    font-weight: 700;
+    color : white;
+}
+.profile-role{
+    color : #24DDDC;
+}
+.bio{
+    font-weight: 300;
+    color : white ;
+    font-size: 14px;
+}
+.missions{
+    width : 100%;
+}
+
+.mission-svg {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.mission-img{
+    max-width:200px;
+
+}
+.mission-name{
+    font-weight: 700;
+    color : #24DDDC;
+}
+.mission-text{
+    font-weight: 300;
+    color : white ;
+    font-size: 14px;
+}
+
+.footer-icon .fab:hover{
+    color : white;
+    transform: translateY(-4px);
+    
+   
+}
+.footer-icon .fab{
+  transition: all .3s ease-in-out;
+  
+    
+   
+}
+
+.footer-icon{
+    color : #24DDDC;
+   
+   
+}
+.subsrcibe-btn{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.foot{
+ padding: 30px;
+    
+}
+.container{
+    width : 100%;
+}
+.btn{
+    color: white!important;
+    font-weight: 700!important;
+    letter-spacing: 0.8px;
+    background: linear-gradient(to right,#24DDDC , #7D6DE9); 
+    margin: 10px;
+    margin-top: 0;
+}
+
+.logo{
+    max-width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.logo-head{
+    max-width: 100%;
+  padding : 20px;
+  padding-top: 0;
+}
+.ready{
+    padding :10px 24px 10px 24px;
+   position: relative;
+   top:-14px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 140, 255, 0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 225, 255, 1);
+    background-color: aqua;
+    border-radius: 5px; 
+
+}
+
+

@@ -1,0 +1,48 @@
+.our-promise{
+    margin: 0;
+    padding: 100px 0;
+    color :  white ;
+    background-image: radial-gradient(#264471, #040e1b);
+    background-image: url('../img/bg.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tdlogo{
+    margin: 0;
+    padding: 0;
+    display: block; 
+    background-image: url('../img/bg-2.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: contain;
+}
+.tdlogo-text{
+    display: none ;
+}
+canvas{
+    display: block ;
+}
+@media (max-width : 800px){
+    .tdlogo{
+        background-image: url('../img/bg-3.png'); 
+        height: 80vh;  
+    }
+
+    .tdlogo-text{
+        display: block ;
+    }
+}
+
+@media (max-width : 500px){
+    .tdlogo{
+        background-image: url('../img/bg-4.png'); 
+        height: 80vh;
+        
+    }
+    .tdlogo-text{
+        display: block ;
+    }
+}
