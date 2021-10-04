@@ -42,6 +42,7 @@
 </head>
 
 <body onscroll="scrollNav()">
+  <div id = "preloader"></div>
   <nav id="navbar">
     <div class="logo-head">
       <img src="./img/SideTextLogo.62b7e034.svg" />
@@ -1088,6 +1089,14 @@
         navbar.classList.remove("sticky");
       }
     }
+  </script>
+  <script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load",function()
+    {
+      loader.style.display = "none";
+    })
   </script>
 </body>
 

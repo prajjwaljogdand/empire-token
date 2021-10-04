@@ -7,6 +7,15 @@ body{
     overflow-x: hidden;
 
 }
+#preloader
+{
+    background: #000 url(../img/preloader.gif) no-repeat center center;
+    background-size: 35%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
 
 .profile_why_section{
     background-image: url('../img/bg.png');
