@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: radial-gradient(#264471, #051427);
+    background:#121133!important;
     overflow-x: hidden;
+
 }
 
 .profile_why_section{
@@ -25,10 +26,12 @@ body{
     padding: 150px 0;
 }
 
-
+textarea:focus, input:focus{
+    outline: none;
+}
 .sponsors{
-    background: linear-gradient(180deg, #121133    0%, #100F2F 100%);
-    padding: 50px;
+    background: linear-gradient(180deg, #121133    0%, #051427    100%);
+    padding-bottom: 5%;
 }
 .sponsor{
     width: 100%;
@@ -100,9 +103,16 @@ body{
 .data-box{
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    position : absolute;
-    top : 650px;
+    position: relative;
+    top : -140px;
+
 }
+@media (max-width: 1200px) {
+    .data-box{
+        top : 0!important;
+    }
+}
+
 .Why{
     padding-bottom:  100px !important;
     margin-bottom:  100px;

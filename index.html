@@ -50,11 +50,15 @@
     <div class="links">
       <div class="upper">
         <div class="info">
-
+          <a href="#">Home</a>
+          <a href="#">Tokenomics</a>
+          <a href="#">Audit</a>
+          <a href="#" class="btn p-2" style="background : black ; border :  1px solid aqua">Dex</a>
+          <a href="#" class="btn p-2"  style="background : black ; border :  1px solid aqua">NFT Marketplace</a>
+          <a href="#">Price Chart</a>
+          <a href="#" class="text-white btn p-2">Buy On PancakeSwap</a>
         </div>
-        <div class="btn">
-          <a href="#" class="text-white">Buy On PancakeSwap</a>
-        </div>
+       
         <div class="translate">
           <div class="translate-button">
             <i class="fas fa-globe-americas"></i>
@@ -68,14 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="lower">
-        <a href="#">Home</a>
-        <a href="#">Tokenomics</a>
-        <a href="#">Audit</a>
-        <a href="#" class="button-black">Dex</a>
-        <a href="#" class="button-black">NFT Marketplace</a>
-        <a href="#">Price Chart</a>
-      </div>
+     
     </div>
     <div class="mobile-nav">
       <i class="fas fa-bars" id="menuId" style="font-size: 1.5em; padding-top :  20px; cursor: pointer; color: white"
@@ -125,32 +122,80 @@
         lcw-color-bg="#000000" lcw-border-w="1"></div>
       <p style="font-size: 1.5vh; color: aqua ; margin-bottom: 0; margin-top: 10px;">TOKEN ADDRESS</p>
       <div class="token-id">
-        <p class="mb-0">
-          0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288
-          <a class="btn mb-0 mr-0">Copy</a>
-        </p>
+        <input class="address" type="text" id="myInput" value="1wf435783frb38c2bwxhqajxmwu3ex230iec"
+         style="width: 75%; background : transparent; border : 0 solid white ; color : white;" readonly></input>
+          <input id="copyButton" type="submit" value="COPY"
+          onclick="myFunction()" href="#popup1" class="copy btn mb-0"></input>
+          <script>function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            document.getElementById("copyButton").value="COPIED";
+            
+               
+          }</script>
       </div>
     </div>
     <div class="empire-img">
-      <img src="./img/image 55.png" />
+      <section class="head-slider">
+        <div class="swiper mySwiper-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide head-slide ">
+              <div class="slider-text" style="margin: 30px; margin-top : 50px;">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam fuga omnis minima voluptatibus debitis
+                <div>
+                  <a href="#" class="btn" style="margin: 20px;">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide head-slide">Slide 2</div>
+            <div class="swiper-slide head-slide">Slide 3</div>
+            <div class="swiper-slide head-slide">Slide 4</div>
+
+          </div>
+         
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </section>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper-2", {
+          cssMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+
+
     </div>
-    
+
   </div>
   <div class="container-fluid p-4 justify-content-center data-box">
     <div class="row  justify-content-center">
-      <div class="col-8   col-xl-2 data "  data-aos="fade-up" >
+      <div class="col-8   col-xl-2 data " data-aos="fade-up">
         Name : ENPIRE TOKEN
       </div>
-      <div class="col-8  col-xl-2 data"  data-aos="fade-up" >
-       Type : ERC20
+      <div class="col-8  col-xl-2 data" data-aos="fade-up">
+        Type : ERC20
       </div>
-      <div class="col-8  col-xl-2 data"  data-aos="fade-up" >
-       Symbol : EMPIRE 
+      <div class="col-8  col-xl-2 data" data-aos="fade-up">
+        Symbol : EMPIRE
       </div>
-      <div class="col-8    col-xl-2 data"  data-aos="fade-up" >
-       Supply : 1,000,000,000
+      <div class="col-8    col-xl-2 data" data-aos="fade-up">
+        Supply : 1,000,000,000
       </div>
-      <div class="col-8   col-xl-2  data"  data-aos="fade-up" >
+      <div class="col-8   col-xl-2  data" data-aos="fade-up">
         Decimal : 9
       </div>
     </div>
@@ -179,90 +224,10 @@
       </div>
     </div>
   </div>
-  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper-2">
-    <div class="parallax-bg" style="
-      background-image: url('./img/bg.png');
-    " data-swiper-parallax="-23%"></div>
-    <div class="swiper-wrapper">
-      <div class="latest-news swiper-slide " style="    width :  100vw !important; border: 0px solid #24DDDC;">
-        <div class="title" data-swiper-parallax="-300">Slide 1</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-          </p>
-
-          <a href="#" class="btn" style="width:80%;">Explore</a>
-        </div>
-      </div>
-      <div class="latest-news swiper-slide ">
-        <div class="title" data-swiper-parallax="-300">Slide 2</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-          </p>
-          <a href="#" class="btn" style="width:80%;">Explore</a>
-        </div>
-      </div>
-      <div class="latest-news swiper-slide ">
-        <div class="title" data-swiper-parallax="-300">Slide 2</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-          </p>
-          <a href="#" class="btn" style="width:80%;">Explore</a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <style>
-
-  </style>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper-2", {
-      speed: 600,
-      parallax: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
   <section class="swipe">
     <h5 class="text-center">Use Cases</h5>
-    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up" >How Empire<span
-        class="fw-bold" style="color : #24DDDC; padding-left :  12px">Can be used</span></h1>
+    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up">How Empire<span class="fw-bold"
+        style="color : #24DDDC; padding-left :  12px">Can be used</span></h1>
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -323,8 +288,8 @@
 
   <section class="our-promise">
     <h5 class="text-center">our Promise </h5>
-    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up" >Only The<span
-        class="fw-bold" style="color : #24DDDC; padding-left :  12px"> Highest Standards</span></h1>
+    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up">Only The<span class="fw-bold"
+        style="color : #24DDDC; padding-left :  12px"> Highest Standards</span></h1>
     <div class="tdlogo"><canvas class="webgl"></canvas>
     </div>
     <div class="container-fluid p-4 justify-content-center tdlogo-text">
@@ -372,158 +337,158 @@
 
   <section class="road">
     <h5 class="text-center text-white">Roadmap</h5>
-    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up" >Where We<span
-        class="fw-bold" style="color : #24DDDC; padding-left :  12px"> Are Going</span></h1>
+    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up">Where We<span class="fw-bold"
+        style="color : #24DDDC; padding-left :  12px"> Are Going</span></h1>
     <div class="roadmap">
       <img src="./img/tower.svg" class="tower">
       <div class="roadmap-wrapper">
-      
+
         <div class="event-wrapper">
           <div class="roadmap-event">
-            <div class="no">1 -  </div>
+            <div class="no">1 - </div>
             <div class="mark-cap">
-              <img src="./img/logo-small.png" class="promise-logo" style="width:28px;" >
+              <img src="./img/logo-small.png" class="promise-logo" style="width:28px;">
               market-cap 200$
             </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">2 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">2 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">3 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">3 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">4 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">4 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">5 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">5 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">6 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">6 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">7 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">7 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">8 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">8 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">9 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">9 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">10 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">10 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">11 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">11 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">12 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">12 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">13 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">13 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">14 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">14 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">15 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">15 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">16 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">16 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">17 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">17 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">18 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">18 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">19 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">19 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">20 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">20 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">21 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">21 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">22 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">22 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">23 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">23 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">24-  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">24- </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">25 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">25 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">26 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">26 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">27 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">27 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">28 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">28 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">29 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">29 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">30 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">30 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">31 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">31 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">32 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">32 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">33 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">33 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">34 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">34 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
           <div class="roadmap-event">
-            <div class="no">35 -  </div>
-            <div class="eve">  June 2021 | Private Sale </div>
+            <div class="no">35 - </div>
+            <div class="eve"> June 2021 | Private Sale </div>
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -535,7 +500,7 @@
         style="color : #24DDDC; padding-left :  12px">Empire Token</span></h1>
 
     <div class="missions">
-      <div class="mission p-4 d-sm-flex  " data-aos="fade-up" >
+      <div class="mission p-4 d-sm-flex  " data-aos="fade-up">
         <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
           <img src="./img/vision.png " class="mission-img">
         </div>
@@ -547,7 +512,7 @@
             quo placeat non itaque omnis! "</p>
         </div>
       </div>
-      <div class="mission p-4 d-sm-flex  " data-aos="fade-up" >
+      <div class="mission p-4 d-sm-flex  " data-aos="fade-up">
         <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
           <img src="./img/mission.png " class="mission-img">
         </div>
@@ -579,7 +544,7 @@
   <section class="profile_why_section">
     <h1 class="p-4  m-4 mt-0 fw-bold text-center text-white" data-aos="fade-up">Why<span
         style="color : #24DDDC; padding-left :  12px">Empire Token</span></h1>
-    <div class="container-fluid p-4 justify-content-center Why" data-aos="fade-up" >
+    <div class="container-fluid p-4 justify-content-center Why" data-aos="fade-up">
       <div class="row  justify-content-center">
         <div class="col-8 col-sm-5 col-md-3 col-xl-2 why-text ">
           Strong Use Cases
@@ -599,7 +564,7 @@
       </div>
     </div>
 
-    <div class="profiles" data-aos="fade-up" >
+    <div class="profiles" data-aos="fade-up">
       <h1 class="p-4 m-2 mt-0 fw-bold text-white">Our<span style="color : #24DDDC; padding-left :  12px">Team</span>
       </h1>
       <div class="profile p-4 d-sm-flex  ">
