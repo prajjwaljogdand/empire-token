@@ -329,6 +329,9 @@ backdrop-filter: blur(4px);
 }
 
 @media (max-width: 1200px) {
+  .empire-img{
+    margin-top: 50px;
+  }
   .icon {
     display: block;
   }
