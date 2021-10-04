@@ -55,11 +55,11 @@
           <a href="#">Tokenomics</a>
           <a href="#">Audit</a>
           <a href="#" class="btn p-2" style="background : black ; border :  1px solid aqua">Dex</a>
-          <a href="#" class="btn p-2"  style="background : black ; border :  1px solid aqua">NFT Marketplace</a>
+          <a href="#" class="btn p-2" style="background : black ; border :  1px solid aqua">NFT Marketplace</a>
           <a href="#">Price Chart</a>
           <a href="#" class="text-white btn p-2">Buy On PancakeSwap</a>
         </div>
-       
+
         <div class="translate">
           <div class="translate-button">
             <i class="fas fa-globe-americas"></i>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-     
+
     </div>
     <div class="mobile-nav">
       <i class="fas fa-bars" id="menuId" style="font-size: 1.5em; padding-top :  20px; cursor: pointer; color: white"
@@ -124,10 +124,10 @@
       <p style="font-size: 1.5vh; color: aqua ; margin-bottom: 0; margin-top: 10px;">TOKEN ADDRESS</p>
       <div class="token-id">
         <input class="address" type="text" id="myInput" value="1wf435783frb38c2bwxhqajxmwu3ex230iec"
-         style="width: 75%; background : transparent; border : 0 solid white ; color : white;" readonly></input>
-          <input id="copyButton" type="submit" value="COPY"
-          onclick="myFunction()" href="#popup1" class="copy btn mb-0"></input>
-          <script>function myFunction() {
+          style="width: 75%; background : transparent; border : 0 solid white ; color : white;" readonly></input>
+        <input id="copyButton" type="submit" value="COPY" onclick="myFunction()" href="#popup1"
+          class="copy btn mb-0"></input>
+        <script>function myFunction() {
             /* Get the text field */
             var copyText = document.getElementById("myInput");
 
@@ -137,16 +137,19 @@
 
             /* Copy the text inside the text field */
             document.execCommand("copy");
-            document.getElementById("copyButton").value="COPIED";
-            
-               
+            document.getElementById("copyButton").value = "COPIED";
+
+
           }</script>
       </div>
     </div>
     <div class="empire-img">
       <section class="head-slider">
-        <div class="swiper mySwiper-2">
-          <div class="swiper-wrapper">
+        <div class="swiper mySwiper-2"
+          style="background-image: url('./img/hex.png'); background-size: cover;
+           background-repeat: no-repeat; background-position: center; z-index: 1;
+           padding-top: 50px !important;padding-bottom: 30px !important;">
+          <div class="swiper-wrapper " >
             <div class="swiper-slide head-slide ">
               <div class="slider-text" style="margin: 30px; margin-top : 50px;">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam fuga omnis minima voluptatibus debitis
@@ -160,7 +163,7 @@
             <div class="swiper-slide head-slide">Slide 4</div>
 
           </div>
-         
+
           <div class="swiper-pagination"></div>
         </div>
 
