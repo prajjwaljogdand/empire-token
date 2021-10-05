@@ -172,7 +172,8 @@ footer{
     align-items: center;
 }
 .mission-img{
-    max-width:200px;
+    max-width:180px;
+    width: 100%;
 
 }
 .mission-name{

@@ -339,6 +339,7 @@ backdrop-filter: blur(4px);
   .mobile-nav {
     display: flex;
     justify-content: right;
+    white-space: nowrap;
   }
   .translate{
     padding-top: 15px;
