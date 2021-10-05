@@ -8,18 +8,232 @@ body{
 
 .container{
   margin: auto;
+
 }
 
 
 .hex{
     font-size: 18px;
+    background-image: url('../img/hexa.png');
+    width : 250px;
+    height : 220px ;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+   
     
+}
+.box-2{
+    text-align: center;
+}
+
+.hex-x1{
+    transform: translate(200px,100px);
+}
+.hex-x3{
+    transform: translate(200px,-100px);
+}
+.hex-y1{
+    transform: translate(-200px,100px);
+    margin-left: auto;
+}
+.hex-y3{
+    transform: translate(-200px,-100px);
+    margin-left: auto;
+}
+.hex-y2{
+    margin-left: auto;
+}
+.hex-title{
+    height : 100%;
+    width: 100%;
+    padding : 30px;
+    padding-top : 70px;
+    font-weight: 200;
+  
 }
 
 .per{
-    position: relative; 
-    top : 200px;
-    padding: 20px;
+    font-size: 24px;
 }
+
+.data-2{
+    color: white ;
+    font-weight: 500;
+    border: 1px solid #24DDDC;
+    border-radius: 10px;
+    background-image: radial-gradient(#264471, #051427);
+    padding : 20px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px;
+    text-overflow: none;
+  box-shadow: 1px 1px 10px 2px black,  1px 1px 5px #24DDDC inset;
+}
+.data-3{
+    color: white ;
+    font-weight: 500;
+    border-radius: 10px;
+    background: #7D6DE9;
+    padding : 20px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px;
+    text-overflow: none;
+
+}
+
+.logo-tokenomics{
+    position: absolute; 
+    width : 30%;
+    top : 410px;
+    left: 35%;
+    z-index: 1;
+}
+.box-big{
+    padding-top: 100px;
+
+}
+@media (max-width: 1200px) {
+
+    .hex{
+        font-size: 18px;
+        background-image: url('../img/hexa.png');
+        width : 240px;
+        height : 200px ;
+        background-size: contain ;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+        
+    }
+    .logo-tokenomics{
+        position: absolute; 
+        width : 300px;
+        top : 730px;
+        left: 35%;
+        z-index: 1;
+    }
+  
+    
+}
+@media (max-width:900px) {
+
+    .hex{
+        font-size: 18px;
+        background-image: url('../img/hexa.png');
+        width : 180px;
+        height : 150px ;
+        background-size: contain ;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+        
+    }
+    .logo-tokenomics{
+        position: absolute; 
+        width : 250px;
+        top : 560px;
+        left: 20%;
+    }
+    .hex-x1{
+        transform: translate(120px,65px);
+    }
+    .hex-x3{
+        transform: translate(120px,-65px);
+    }
+    .hex-y1{
+        transform: translate(-120px,65px);
+        margin: auto;
+    }
+    .hex-y3{
+        transform: translate(-120px,-65px);
+        margin: auto;
+    }
+    .hex-y2{
+        margin: auto;
+    }
+
+    .hex-title{
+        height : 100%;
+        font-size: 12px;
+        width: 100%;
+        padding : 30px;
+        padding-top : 25%;
+        font-weight: 200;
+      
+    }
+    .per{
+        font-size: 18px;
+    }
+}
+@media (max-width:500px) {
+    .logo-tokenomics{
+        position: absolute; 
+        width : 250px;
+        top : 580px;
+        left: 20%;
+    }
+    .hex{
+        font-size: 18px;
+        background-image: url('../img/hexa.png');
+        width : 150px;
+        height : 120px ;
+        background-size: contain ;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+        
+    }
+    .hex-x1{
+        transform: translate(100px,60px);
+    }
+    .hex-x3{
+        transform: translate(100px,-60px);
+    }
+    .hex-y1{
+        transform: translate(-100px,60px);
+        margin-left: auto;
+    }
+    .hex-y3{
+        transform: translate(-100px,-60px);
+        margin-left: auto;
+    }
+    .hex-y2{
+        margin-left: auto;
+    }
+
+    .hex-title{
+        height : 100%;
+        font-size: 10px;
+        width: 100%;
+        padding : 30px;
+        padding-top : 20%;
+        font-weight: 100;
+      
+    }
+    .per{
+        font-size: 18px;
+    }
+    .data-2{
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
+
+@media (max-width:400px) {
+    .logo-tokenomics{
+        position: absolute; 
+        width : 250px;
+        top : 620px;
+        left: 20%;
+    }
+}
+
+
 
 
