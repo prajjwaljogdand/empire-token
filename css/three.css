@@ -25,10 +25,11 @@
 canvas{
     display: block ;
 }
-@media (max-width : 800px){
+@media (max-width : 900px){
     .tdlogo{
         background-image: url('../img/bg-3.png'); 
         height: 80vh;  
+        background-size: cover;
     }
 
     .tdlogo-text{
