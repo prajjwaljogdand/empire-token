@@ -43,6 +43,7 @@
 
 <body onscroll="scrollNav()">
   <div id = "preloader"></div>
+ 
   <nav id="navbar">
     <div class="logo-head">
       <img src="./img/SideTextLogo.62b7e034.svg" />
@@ -52,11 +53,12 @@
       <div class="upper">
         <div class="info">
           <a href="#">Home</a>
-          <a href="#">Tokenomics</a>
+          <a href="./tokenomics.html">Tokenomics</a>
           <a href="#">Audit</a>
           <a href="#" class="btn p-2" style="background : black ; border :  1px solid aqua">Dex</a>
           <a href="#" class="btn p-2" style="background : black ; border :  1px solid aqua">NFT Marketplace</a>
           <a href="#">Price Chart</a>
+          <a href="#blog-news-1">Blogs & News</a>
           <a href="#" class="text-white btn p-2">Buy On PancakeSwap</a>
         </div>
 
@@ -92,15 +94,16 @@
         </div>
         <div class="sidenav" id="mySidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
           <a href="#">Home</a>
           <a href="#">Tokenomics</a>
           <a href="#">Audit</a>
           <a href="#" class="button-black">Dex</a>
           <a href="#" class="button-black">NFT Marketplace</a>
           <a href="#">Price Chart</a>
-          <div class="button">
-            <a href="#">Buy On PancakeSwap</a>
-          </div>
+          <a href="#">Blogs & News</a>
+          <a href="#" class="btn">Buy On PancakeSwap</a>
+         
         </div>
       </div>
     </div>
@@ -163,7 +166,8 @@
             <div class="swiper-slide head-slide">Slide 4</div>
 
           </div>
-
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
 
@@ -176,6 +180,10 @@
             el: ".swiper-pagination",
             clickable: true,
           },
+          navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
           mousewheel: true,
           keyboard: true,
         });
@@ -239,7 +247,7 @@
         <div class="swiper-slide">
           <img src="./img/card.png" />
           <div class="case-data">
-            <img src="./img/nft-icon.png" style="width : 160px; height:160px ;margin: auto;padding: 20px;">
+            <img src="./img/nft.svg" style="width :  190px ; height : 140px ;margin: auto; position : relative; left : 20px; padding: 20px;">
             <h1 class="case-title">EMPIRE NFT
               MARKETPLACE</h1>
             <p>Marketplace . Auction, licencing and many more
@@ -251,7 +259,7 @@
         <div class="swiper-slide">
           <img src="./img/card.png" />
           <div class="case-data">
-            <img src="./img/dex.png" style="width : 160px; height:160px ;margin: auto;padding: 20px;">
+            <img src="./img/dex.svg" style="width : 170px; height:175px ;margin: auto;padding: 20px;">
             <h1 class="case-title">EMPIRE DEX</h1>
             <p>Marketplace . Auction, licencing and many more
               Empire brings the world of non-fungible token (NFTs) to diffrent level , with new vision into this place
@@ -352,7 +360,7 @@
             <div class="no">1 - </div>
             <div class="mark-cap">
               <img src="./img/logo-small.png" class="promise-logo" style="width:28px;">
-              market-cap 200$
+              You Are here
             </div>
             <div class="eve"> June 2021 | Private Sale </div>
           </div>
@@ -499,17 +507,17 @@
   </section>
 
 
-  <section class="mission-section">
-    <h1 class="p-4 m-4 mt-0 fw-bold text-center text-white">Why<span
-        style="color : #24DDDC; padding-left :  12px">Empire Token</span></h1>
+  <section class="mission-section" style="background-color: #051427  ;">
+    <h1 class="p-4 m-4 mt-0 fw-bold text-center text-white">What<span
+        style="color : #24DDDC; padding-left :  12px">We Think</span></h1>
 
-    <div class="missions">
+    <div class="missions p-4">
       <div class="mission p-4 d-sm-flex  " data-aos="fade-up">
         <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
           <img src="./img/vision.png " class="mission-img">
         </div>
-        <div class="mission-data m-2  col-sm-5 col-md-4 col-xl-3">
-          <h4 class="mission-name text-sm-center">Our vision</h4>
+        <div class="mission-data m-4 mt-2  col-sm-5 col-md-5 col-xl-3 ">
+          <h4 class="mission-name ">Our vision</h4>
           <p class="mission-text">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex minima
             voluptate
             minus. Recusandae id autem repellat velit porro voluptates temporibus obcaecati! Praesentium, maiores! Dolor
@@ -520,7 +528,7 @@
         <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
           <img src="./img/mission.png " class="mission-img">
         </div>
-        <div class="mission-data m-2  col-sm-5 col-md-4 col-xl-3">
+        <div class="mission-data m-4 mt-2 col-sm-5 col-md-5 col-xl-3">
           <h4 class="mission-name">Our Mission</h4>
           <p class="mission-text">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex minima
             voluptate
@@ -532,7 +540,7 @@
         <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
           <img src="./img/value.png " class="mission-img">
         </div>
-        <div class="mission-data m-2  col-sm-5 col-md-4 col-xl-3">
+        <div class="mission-data m-4 mt-2 col-sm-5 col-md-5 col-xl-3">
           <h4 class="mission-name">Our Value</h4>
           <p class="mission-text">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex minima
             voluptate
@@ -569,10 +577,10 @@
     </div>
 
     <div class="profiles" data-aos="fade-up">
-      <h1 class="p-4 m-2 mt-0 fw-bold text-white">Our<span style="color : #24DDDC; padding-left :  12px">Team</span>
+      <h1 class="p-4 m-2 mt-0 fw-bold text-white text-center">About<span style="color : #24DDDC; padding-left :  12px; padding-bottom : 50px;">The Founder</span>
       </h1>
-      <div class="profile p-4 d-sm-flex  ">
-        <div class="col-sm-4 p-2 col-md-3 col-xl-2 profile-svg ">
+      <div class="profile p-4 d-sm-flex justify-content-center  ">
+        <div class="col-sm-5 p-2 col-md-4 col-xl-3 profile-svg ">
           <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
@@ -582,7 +590,7 @@
             <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" />
           </svg>
         </div>
-        <div class="profile-data m-2  col-sm-5 col-md-4 col-xl-3">
+        <div class="profile-data m-2  col-sm-5 col-md-4 col-xl-3" style="padding-top: 30px;">
           <h4 class="profile-name">Dulla</h4>
           <h6 class="profile-role">Founder & CEO</h6>
           <p class="bio">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex minima voluptate
@@ -648,7 +656,7 @@
 
   <!-- news and blog -->
 
-  <div class="news-blog">
+  <div class="news-blog" style="background-color: #051427  ;" id="blog-news-1">
     <h1 class="p-4 m-2 mt-0 fw-bold text-white">Blogs</h1>
     <div class="owl-carousel owl-theme blog">
 
@@ -700,7 +708,7 @@
                 market?
               </p>
               <div class="d-flex justify-content-between">
-                <span href="#" class="" ">2021-09-04</span>
+                <span href="#" class=" ">2021-09-04</span>
                           <a href=" #" class="" style="color:aqua">read more</a>
               </div>
 
@@ -767,7 +775,7 @@
   </div>
 
 
-  <div class="news-blog">
+  <div class="news-blog" style="background-color: #051427  ;">
     <h1 class="p-4 m-2 mt-0 fw-bold text-white">News</h1>
     <div class="owl-carousel owl-theme blog">
 
