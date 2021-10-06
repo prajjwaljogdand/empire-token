@@ -26,11 +26,10 @@ loader.load('./logo2.glb', function (glb) {
     camera.position.y = 0;
     camera.position.z = 5;
     scene.add(root);
-    scene.rotation.set(0.15, 0.4, 0)
-    tl.to(scene.rotation, { x: -0.15, y: 0.4, duration: 3 });
-    tl.to(scene.rotation, { x: -0.15, y: -0.4, duration: 3 });
-    tl.to(scene.rotation, { x: 0.15, y: -0.4, duration: 3 });
-    tl.to(scene.rotation, { x: 0.15, y: 0.4, duration: 3 });
+    scene.rotation.set(0, 0.4, 0)
+    tl.to(scene.rotation, { x: 0, y: -0.4, duration: 3 });
+    tl.to(scene.rotation, { x: 0, y: 0.4, duration: 3 });
+  
 
 }, function (xhr) {
     console.log((xhr.loaded / xhr.total * 100) + "% loaded")

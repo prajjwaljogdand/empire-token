@@ -23,36 +23,25 @@ nav {
   display: flex;
   justify-content: space-evenly;
 
-  width: 95%;
+  width: 100%;
 }
-.links {
-  grid-template-rows: 50% 50%;
-}
+
 .info {
   color: #fff;
   width : 600px;
   display :  flex ;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 5px;
 
   float : right;
   width: 900px;
 }
-.lower {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  float : right;
-  width: 88%;
-}
+
+
 .info a {
   color: #fff;
  
-  margin-left: 3%;
-}
-.info a {
-  color: #fff;
- 
-  margin-left: 3%;
+  margin-left: 2px;
   padding: 5px;
 }
 .info a:hover {
@@ -328,6 +317,7 @@ backdrop-filter: blur(4px);
   height: 50px;
 }
 
+
 @media (max-width: 1200px) {
   .empire-img{
     margin-top: 50px;
@@ -339,8 +329,8 @@ backdrop-filter: blur(4px);
     grid-template-columns: 70% 30%;
   }
   .logo-head img {
-    height: 4.55vh;
-    
+    height: 50px;
+    margin: 10px;
     margin-left: 0;
   }
   .links {
@@ -349,6 +339,7 @@ backdrop-filter: blur(4px);
   .mobile-nav {
     display: flex;
     justify-content: right;
+    white-space: nowrap;
   }
   .translate{
     padding-top: 15px;
@@ -452,5 +443,32 @@ backdrop-filter: blur(4px);
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 400px) {
+  .translate-button p {
+    font-size:10px;
+    margin-left: 2px !important;
+
+  }
+  .logo-head img{
+    height: 40px !important;
+  }
+}
+@media (max-width: 600px) {
+
+  .hero-text {
+    padding : 25px;
+  }
+  .roadmap{
+    height : 50vh;
+  }
+  .roadmap-wrapper{
+    height : 50vh;
+  }
+  .event-wrapper{
+    height : 80vh;
+  }
+
+}
+
 
 
