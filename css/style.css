@@ -370,10 +370,12 @@ backdrop-filter: blur(4px);
   {
     margin: 0;
     padding: 2%;
+    order:2;
   }
   .empire-img img
   {
     position: relative;
+    order:1;
   }
  
   

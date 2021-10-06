@@ -19,6 +19,7 @@ body{
     width: 100vw;
     position: fixed;
     z-index: 100;
+    transition: all 300ms ease-in;
 }
 
 .profile_why_section{
