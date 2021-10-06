@@ -365,6 +365,7 @@ backdrop-filter: blur(4px);
   .hero
   {
     grid-template-columns: auto;
+    padding-top:  70px;
   }
   .hero-text
   {
