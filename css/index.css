@@ -126,6 +126,12 @@ textarea:focus, input:focus{
         top : 0!important;
     }
 }
+@media (min-width: 500px) {
+    .btn-poster{
+ padding-top: 50px;
+    }
+
+}
 
 .Why{
     padding-bottom:  100px !important;
