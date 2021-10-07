@@ -415,6 +415,10 @@ backdrop-filter: blur(4px);
    float:none;
     width: 95%;
     font-size: 18px;
+    height: 50vh;
+  }
+  .event-wrapper{
+    height: 80vh;
   }
   .eve{
     width : 80%;
