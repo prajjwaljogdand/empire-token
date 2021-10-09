@@ -13,7 +13,7 @@ body{
 }
 #preloader
 {
-    background: #000 url(../img/preloader.gif) no-repeat center center;
+    background: #000 url(../img/logo-big.png) no-repeat center center;
     background-size: 35%;
     height: 100vh;
     width: 100vw;
@@ -125,6 +125,12 @@ textarea:focus, input:focus{
     .data-box{
         top : 0!important;
     }
+}
+@media (min-width: 500px) {
+    .btn-poster{
+ padding-top: 50px;
+    }
+
 }
 
 .Why{

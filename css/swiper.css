@@ -19,18 +19,55 @@
 
 
 
+
 .head-slide {
-    height: 300px;
+    height: 350px !important;
     border: 2px solid black;
     border-radius : 0px !important;
 }
-@media (max-width: 400px) {
+@media (max-width: 900px) {
     .head-slider {
-        width: 85%;
-        margin :  0;
+        width: 95%;
+        margin :  auto;
     } 
+
+    .head-slide{
+        height : 400px!important;
+    }
 }
 
+@media (max-width: 600px) {
+    .head-slider {
+        width: 95%;
+        margin :  auto;
+    } 
+
+    .head-slide{
+        height : 300px!important;
+    }
+}
+@media (max-width: 400px) {
+    .head-slider {
+        width: 95%;
+        margin :  auto;
+        
+    } 
+    .head-slide{
+        height : 230px!important;
+    }
+}
+.swiper-button-next{
+    font-size: 24px;
+}
+.swiper-button-prev{
+    font-size: 24px;
+}
+.swiper-button-next::after {
+    display: none;
+  }
+  .swiper-button-prev::after {
+    display: none;
+  }
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -152,7 +189,7 @@ background-size: auto;
 .case-data{
 color : #ffffff;
 padding : 20px;
-margin : 20px;
+margin : 10px;
 position: relative;
 top : -500px;
 text-align: center;
@@ -166,7 +203,7 @@ margin : 0 ;
 font-size: 32px;
 }
 .case-data p{
-padding : 20px 20px;
+padding : 10px 10px;
 }
 .head-slide{
     text-align: center;
@@ -197,7 +234,33 @@ height :  400px;
 }
 
 
+.slide-1{
+    background-image: url('../sliders/1.1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slide-2{
+    background-image: url('../sliders/2.1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+ 
+.slide-3{
+    background-image: url('../sliders/slide-3.jpg') !important;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
+ 
+.slide-4{
+    background-image : url('../sliders/slide-4.jpg') !important;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
  
  
      
