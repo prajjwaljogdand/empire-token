@@ -35,6 +35,7 @@
   <link href="./css/index.css" rel="stylesheet" />
   <link href="./css/swiper.css" rel="stylesheet" />
   <link href="./css/three.css" rel="stylesheet" />
+  
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -84,7 +85,7 @@
       <div class="translate">
         <div class="translate-button mobile">
           <i class="fas fa-globe-americas"></i>
-          <p style="margin-left: 10px;">ENG</p>
+          <p style="margin-left: 10px;" id="curLang">ENG</p>
           <div class="langs">
             <a href="javascript:changeToEn();">English </a>
             <a href="javascript:changeToTR();">Turkish</a>
@@ -262,7 +263,7 @@
             <a href="http://nft.empiretoken.world" class="btn" style="width:80%;" id = "explore">Explore</a>
           </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide">  
           <img src="./img/card.png" />
           <div class="case-data">
             <img src="./img/dex.svg" style="width : 170px; height:175px ;margin: auto;padding: 20px;">
@@ -1116,6 +1117,7 @@
       loader.style.opacity = 0;
     })
   </script>
+  
 </body>
 
 </html>

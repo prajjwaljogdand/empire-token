@@ -381,7 +381,9 @@ backdrop-filter: blur(4px);
  
   
 }
+
 @media (max-width: 600px) {
+  
   .sidenav .button-black {
     width: 50%;
   }
@@ -409,6 +411,10 @@ backdrop-filter: blur(4px);
 }
 
 @media (max-width: 900px) {
+  .logo-head img
+  {
+    width: 10em;
+  }
   .roadmap-wrapper
   {
    margin: auto;
