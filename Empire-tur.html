@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empire</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--stylsheets-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="./css/blog.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/swiper.css" rel="stylesheet" />
+  <link href="./css/three.css" rel="stylesheet" />
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src = "js/index.js"></script>
+</head>
+
+<body onscroll="scrollNav()">
+  <div id = "preloader"> <div class="loading text-white">
+    Yükleniyor...</div>
+
+  </div>
+ 
+  <nav id="navbar">
+    <div class="logo-head">
+      <img src="./img/SideTextLogo.62b7e034.svg" />
+    </div>
+
+    <div class="links">
+      <div class="upper">
+        <div class="info">
+          <a href="#" id = "home">Home</a>
+          <a href="./tokenomics.html" id = "Tokenomics">Tokenomics</a>
+          <a href="https://empiretoken.world/TechRateAudit.pdf" id = "Audit">Audit</a>
+          <a href="#" class="btn p-2" style="background : black ; border :  1px solid aqua" id = "dex">Dex</a>
+          <a href="https://nft.empiretoken.world/" class="btn p-2" style="background : black ; border :  1px solid aqua" id = "nft">NFT Marketplace</a>
+          <a href="https://poocoin.app/tokens/0x293c3ee9abacb08bb8ced107987f00efd1539288" id = "price">Price Chart</a>
+          <a href="https://realempiretoken.medium.com/" id="blog">Blogs & News</a>
+          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288" class="text-white btn p-2" id = "buy">
+            satın al PancakeSwap</a>
+        </div>
+
+        <div class="translate">
+          <div class="translate-button">
+            <i class="fas fa-globe-americas"></i>
+            <p id = "curLang">TUR</p>
+            <div class="langs">
+              <a href="./index.html">English </a>
+              <a href="#;">Turkish</a>
+              <a href="./Empire-zh.html">Chinese</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="mobile-nav">
+      <i class="fas fa-bars" id="menuId" style="font-size: 1.5em; padding-top :  20px; cursor: pointer; color: white"
+        onclick="openNav()"></i>
+
+      <div class="translate">
+        <div class="translate-button mobile">
+          <i class="fas fa-globe-americas"></i>
+          <p style="margin-left: 10px;" id="curLang">TUR</p>
+          <div class="langs">
+            <a href="./index.html">English </a>
+            <a href="#">Turkish</a>
+            <a href="./Empire-zh.html">Chinese</a>
+            
+          </div>
+        </div>
+        <div class="sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
+          <a href="#" id = "home">Home</a>
+          <a href="./tokenomics.html" id="token"> Tokenomics</a>
+          <a href="https://empiretoken.world/TechRateAudit.pdf" id = "audit">Audit</a>
+          <a href="#" class="button-black"  id="dex">Dex</a>
+          <a href="https://nft.empiretoken.world/" class="button-black" id = "nft">NFT Marketplace</a>
+          <a href="https://poocoin.app/tokens/0x293c3ee9abacb08bb8ced107987f00efd1539288" id = "price">Price Chart</a>
+          <a href="https://realempiretoken.medium.com/" id = "blog">Blogs & News</a>
+          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288" class="btn" id = "buy">
+            satın al PancakeSwap</a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="hero-text">
+      <h1 id="title-head">Empire’a Hoş Geldiniz</h1>
+      <p id="heroText1"> 
+        Benzersiz bir dijital dünya yaratıyoruz. dApp’ler geliştirmek ve çözümler oluşturmak, Empire’ı geliştirmek ve zirveye tırmanmamızın yolu.
+      </p>
+      <p id="heroText2">Hırslı ve şeffaf Empire Token’e sahip olun</p>
+      <div class="hero-links">
+        <a href="https://bscscan.com/token/0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288" class="button-black" id = "heroLink1">BSC SCAN </a>
+        <a href="https://empiretoken.world/whitepaper.pdf" class="button-black" id = "heroLink2">WHITEPAPER</a>
+      </div>
+      <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+      <div class="livecoinwatch-widget-6" lcw-coin="EMPIRE" lcw-base="USD" lcw-period="d" lcw-color-tx="#ffffff"
+        lcw-color-bg="#000000" lcw-border-w="1"></div>
+      <p style="font-size: 1.5vh; color: aqua ; margin-bottom: 0; margin-top: 10px;">TOKEN ADDRESS</p>
+      <div class="token-id">
+        <input class="address" type="text" id="myInput" value="0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288"
+          style="width: 75%; background : transparent; border : 0 solid white ; color : white;" readonly></input>
+        <input id="copyButton" type="submit" value="COPY" onclick="myFunction()" href="#popup1"
+          class="copy btn mb-0"></input>
+        <script>function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            document.getElementById("copyButton").value = "COPIED";
+
+
+          }</script>
+      </div>
+    </div>
+    <div class="empire-img">
+      <section class="head-slider">
+        <div class="swiper mySwiper-2"
+          style="background-image: url('./img/hex.png'); background-size: cover;
+           background-repeat: no-repeat; background-position: center; z-index: 1;
+           padding-top: 50px !important;padding-bottom: 30px !important;">
+          <div class="swiper-wrapper " >
+            <div class="swiper-slide head-slide slide-1 ">
+              <div class="slider-text" style="margin: 40px; margin-top : 50px;" id = "slideText1">
+               
+                <div  class="btn-poster">
+                  <a href="http://nft.empiretoken.world" class="btn poster" style="margin-top: 50%; margin-left : 150px;"  id = "explore">keşfetmek</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide head-slide slide-2" id = "slideText2">
+              <a href="https://t.me/empiretokenworld" class="btn poster" style="margin-top: 50%; "  id = "explore">Join Us</a>
+            </div>
+            <div class="swiper-slide head-slide slide-3" id="slideText3"><a href="#roadmapHead" class="btn poster" style="margin-top: 50%; "  id = "explore">keşfetmek</a></div>
+            <div class="swiper-slide head-slide slide-4" id="slideText4" ><a href="https://coinmarketcap.com/currencies/empire-token/" class="btn poster" style="margin-top: 50%; "  id = "explore">keşfetmek</a> </div>
+
+          </div>
+          <div class="swiper-button-next"><i class="fas fa-angle-right"></i></div>
+          <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </section>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper-2", {
+          cssMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+
+
+    </div>
+
+  </div>
+  <div class="container-fluid p-4 justify-content-center data-box">
+    <div class="row  justify-content-center">
+      <div class="col-8   col-xl-2 data " data-aos="fade-up" id = "nameId">
+        Token Adı : EMPIRE TOKEN
+      </div>
+      <div class="col-8  col-xl-2 data" data-aos="fade-up" id="typeId">
+        Ağ : BEP-20
+      </div>
+      <div class="col-8  col-xl-2 data" data-aos="fade-up" id = "symbolId">
+        Sembol : EMPIRE
+      </div>
+      <div class="col-8    col-xl-2 data" data-aos="fade-up" id="supplyId">
+        Arzı : 1,000,000,000
+      </div>
+      <div class="col-8   col-xl-2  data" data-aos="fade-up" id="decimalId">
+        Ondalık : 9
+      </div>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+  <div class="sponsors">
+    <div class="container-fluid p-4 justify-content-center">
+      <div class="row  justify-content-center">
+        <div class="col-8 col-sm-5 col-md-3 col-xl-3 sponsor-list ">
+          <img src="./img/sponsor.png" alt="" class="sponsor">
+        </div>
+        <div class="col-8 col-sm-5 col-md-3 col-xl-3 sponsor-list">
+          <img src="./img/sponsor-2.png" alt="" class="sponsor">
+        </div>
+        <div class="col-8 col-sm-5 col-md-3 col-xl-3 sponsor-list">
+          <img src="./img/sponsor-3.png" alt="" class="sponsor">
+        </div>
+        <div class="col-8  col-sm-5 col-md-3  col-xl-3 sponsor-list">
+          <img src="./img/sponsor-4.png" alt="" class="sponsor">
+        </div>
+        <div class="col-8  col-sm-5 col-md-3 col-xl-3 sponsor-list">
+          <img src="./img/sponsor-5.png" alt="" class="sponsor">
+        </div>
+        <div class="col-8  col-sm-5 col-md-3 col-xl-3 sponsor-list">
+          <img src="./img/coin.png" alt="" class="sponsor">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="swipe">
+    <h5 class="text-center" id = "useCase">Kullanım Alanları</h5>
+    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up"><span id = "useCaseText">Empire Nasıl </span><span class="fw-bold"
+        style="color : #24DDDC; padding-left :  12px" id="useCaseTextBlue">Kullanılabilir</span></h1>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="./img/card.png" />
+          <div class="case-data">
+            <img src="./img/nft.svg" style="width :  190px ; height : 140px ;margin: auto; position : relative; left : 20px; padding: 20px;">
+            <h1 class="case-title" id = "caseTitle1">EMPIRE NFT PAZARYERİ</h1>
+            <p id = "caseText1">Platformumuz, kullanıcıların dijital varlıklarını güvenli bir şekilde satın almalarına-satmalarına, ticaretini yapmalarına ve ticari kullanım için lisanslamalarına olanak tanıyan, en yenilikçi Non-Fungible Token platformu olacak.
+            </p>
+            <a href="http://nft.empiretoken.world" class="btn" style="width:80%;" id = "explore">keşfetmek</a>
+          </div>
+        </div>
+        <div class="swiper-slide">  
+          <img src="./img/card.png" />
+          <div class="case-data">
+            <img src="./img/dex.svg" style="width : 170px; height:175px ;margin: auto;padding: 20px;">
+            <h1 class="case-title" id = "caseTitle2">EMPIRE DEX</h1>
+            <p id = "caseText2">Empire DEX sektördeki en düşük ücretlerle kripto para ticareti yapmanın yoludur ve varlıklarınızı büyütmenizi kolaylaştırır. Hemen alım satım yapmaya başlamakla kalmaz. Tokenlerinizi platformumuzda tutarak da avantajlardan faydalanabilirsiniz. Bu Empire Dex’i her şey dahil bir çözüm haline getirmektedir
+            </p>
+            <a href="#" class="btn" style="width:80%;" id = "explore">Coming soon</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="time">
+            <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+            <a href="https://logwork.com/countdown-qt6f" class="countdown-timer" data-style="columns"
+              data-timezone="Europe/London" data-textcolor="#ffffff" data-date="2021-09-30 18:24"
+              data-digitscolor="#00fff7" data-unitscolor="#ffffff">Coming Soon</a>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="time">
+            <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+            <a href="https://logwork.com/countdown-qt6f" class="countdown-timer" data-style="columns"
+              data-timezone="Europe/London" data-textcolor="#ffffff" data-date="2021-09-30 18:24"
+              data-digitscolor="#00fff7" data-unitscolor="#ffffff">Coming Soon</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="swiper-button-next"><i class="fas fa-angle-right"></i></div>
+      <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/card-carousel.js"></script>
+  </section>
+
+
+  <section class="our-promise">
+    <h5 class="text-center" id = "promiseHead">Sözümüz</h5>
+    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up"><span  id = "promiseText">	Yalnızca En </span><span class="fw-bold"
+      style="color : #24DDDC; padding-left :  12px"  id = "promiseTextBlue"> Yüksek Standartlar</span></h1>
+    <div class="tdlogo"><canvas class="webgl"></canvas>
+    </div>
+    <div class="container-fluid p-4 justify-content-center tdlogo-text">
+      <div class="row  justify-content-center">
+        <div class="col-11 col-sm-7 col-md-5 promise ">
+          <img src="./img/logo-small.png" class="promise-logo">
+          <span id = "transparency">Tam Şeffaflık</span>
+        </div>
+        <div class="col-11 col-sm-7 col-md-5  promise ">
+          <img src="./img/logo-small.png" class="promise-logo">
+          <span id = "marketing">Pazarlama ve Daha Fazla Pazarlama</span>
+        </div>
+        <div class="col-11 col-sm-7 col-md-5  promise ">
+          <img src="./img/logo-small.png" class="promise-logo">
+          <span id = "innovate">Yenilikçi Düşünce</span>
+        </div>
+        <div class="col-11  col-sm-7 col-md-5   promise ">
+          <img src="./img/logo-small.png" class="promise-logo">
+          <span id = "real">Gerçek Hayata Yönelik Uygulama</span>
+        </div>
+        <div class="col-11 col-sm-7 col-md-5  promise ">
+          <img src="./img/logo-small.png" class="promise-logo">
+          <span id = "xp">Deneyimli Ekip</span>
+        </div>
+        <div class="col-11 col-sm-7 col-md-5  promise ">
+          <img src="./img/logo-small.png" class="promise-logo">
+          <span id = "con">Kontrat Auditleri</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+      integrity="sha512-yNJzAsg5JyP91u+sLHlUDULMBd3hmEiVkYeeN1cQBKaLZ7EyT6oH2u5THNIRM2Fu6VKcZJv+F/QAp1h/qzy9Ow=="
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"
+      integrity="sha512-LF8ZB1iTwi4Qvkm4pekHG4a437Y9Af5ZuwbnW4GTbAWQeR2E4KW8WF+xH8b9psevV7wIlDMx1MH9YfPqgKhA/Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/threed.js"></script>
+  </section>
+
+
+  <section class="road">
+    <h5 class="text-center text-white" id ="roadmapHead">Yol Haritası</h5>
+    <h1 class="p-4 m-4 pt-2 mt-0 text-center text-white" data-aos="fade-up"><span id = "roadMapText">Nereye </span><span class="fw-bold"
+      style="color : #24DDDC; padding-left :  12px" id = "roadMapTextBlue">Gidiyoruz</span></h1>
+    <div class="roadmap">
+      <img src="./img/tower.svg" class="tower">
+      <div class="roadmap-wrapper">
+
+        <div class="event-wrapper">
+          <div class="roadmap-event">
+            <div class="no">1 - </div>
+            <div class="eve"> Q2 2021 | Çeyrek </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">2 - </div>
+            <div class="eve"> Q2 2021 | Website 1.0 </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">3 - </div>
+            <div class="eve"> Q2 2021 | Sosyal Medya </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">4 - </div>
+            <div class="eve"> Q2 2021 | DXSale Satışı </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">5 - </div>
+            <div class="eve"> Q2 2021 | Akıllı Kontrar Auditi </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">6 - </div>
+            <div class="eve"> Q2 2021 | Whitepaper 1.0 </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">7 - </div>
+            <div class="eve"> Q2 2021 | Empire Token Lansmanı </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">8 - </div>
+            <div class="eve"> Q2 2021 | Empire Token CoinGecko, Coinmarketcap ve Blockfolio
+              Listelemeleri
+               </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">9 - </div>
+            <div class="eve"> Q2 2021 | Kurucumuz ile Canlı Video Röportajları </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">10 - </div>
+            <div class="eve"> Q2 2021 | Kurucumuz ile Canlı Video Röportajları </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">11 - </div>
+            <div class="eve"> Q3 2021 | İlk Ortaklık Duyurusu </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">12 - </div>
+            <div class="eve"> Q3 2021 | Empire NFT Marketplace’in Geliştirilmesi </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">13 - </div>
+            <div class="eve"> Q3 2021 | Empire NFT Marketplace’in Soft Lansmanı </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">14 - </div>
+            <div class="eve"> Q3 2021 | Buy back and Manuel Burnler</div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">15 - </div>
+            <div class="mark-cap"  >
+              <img src="./img/logo-small.png" class="promise-logo" style="width:28px;">
+              <span id = "youAre" >You Are here</span>
+            </div>
+            <div class="eve"> Q4 2021 | Website 2.0 Lansmanı </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">16 - </div>
+            <div class="eve"> Q4 2021 | Empire NFT Marketplace’in Mainnet Lansmanı </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">17 - </div>
+            <div class="eve"> Q4 2021 | NFT Marketplace Auditi </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">18 - </div>
+            <div class="eve"> Q4 2021 | Sanatçılar ve NFT projeleriyle ortaklıklar </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">19 - </div>
+            <div class="eve"> Q4 2021 | Empire NFT Koleksiyonu Lansmanı </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">20 - </div>
+            <div class="eve"> Q4 2021 | NFT Marketplace 2. Aşama Geliştirmesi: Lisanslama  </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">21 - </div>
+            <div class="eve"> Q4 2021 | Merkezi Olmayan Borsa (DEX)</div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">22 - </div>
+            <div class="eve"> Q4 2021 | Empire Portföy Takip Uygulaması </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">23- </div>
+            <div class="eve"> Q1 2022 | Empire Ödeme Sistemi </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">24 - </div>
+            <div class="eve"> Q1 2022 | Empire Ödeme Sistemi Auditi</div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">25 - </div>
+            <div class="eve"> Q1 2022 | İşletmeler ve Şirketlerle Ortaklıklar </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">26 - </div>
+            <div class="eve"> Q1 2022 | To be Updated </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">27 - </div>
+            <div class="eve"> Q1 2022 | -- to be updated -- </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">28 - </div>
+            <div class="eve"> Q1 2022 | -- to be updated -- </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">29 - </div>
+            <div class="eve"> Q1 2022 | -- to be updated -- </div>
+          </div>
+          <div class="roadmap-event">
+            <div class="no">30 - </div>
+            <div class="eve"> Q1 2022 | -- to be updated -- </div>
+          </div>
+         
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mission-section" style="background-color: #051427  ;">
+    <h1 class="p-4 m-4 mt-0 fw-bold text-center text-white"><span id = "thinkText">Neden </span><span
+      style="color : #24DDDC; padding-left :  12px" id = "thinkTextBlue">Empiire Token</span></h1>
+
+    <div class="missions p-4">
+      <div class="mission p-4 d-sm-flex  " data-aos="fade-up">
+        <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
+          <img src="./img/vision.png " class="mission-img">
+        </div>
+        <div class="mission-data m-2 m-sm-4 mt-2  col-sm-5 col-md-5 col-xl-4 ">
+          <h4 class="mission-name " id = "vision">Vizyonumuz</h4>
+          <p class="mission-text" id = "visionText">Empire’ın vizyonu isminde saklıdır: Zirveye oynuyoruz, güvenli ve Pazar odaklı uygulamalar ve çözümler geliştirerek zirveye tırmanıyoruz. Uygulamalarımız yenilikçi bir NFT pazaryeri ve DEX’in yanı sıra geliştirme aşamasında olan fazla sayıda uygulama içerir.</p>
+        </div>
+      </div>
+      <div class="mission p-4 d-sm-flex  " data-aos="fade-up">
+        <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
+          <img src="./img/mission.png " class="mission-img">
+        </div>
+        <div class="mission-data m-2 m-sm-4 mt-2 col-sm-5 col-md-5 col-xl-4">
+          <h4 class="mission-name" id = "mission">Misyonumuz</h4>
+          <p class="mission-text" id = "missionText">Sadece DeFi ve blockcahin ekosistemi için değil, gerçek dünya için de faydalı ürün ve çözümler sunmak. DeFi uygulamalarından başlayarak ilk projemiz, kullanıcılarının ticaret veya ticari amaçla kiralama yoluyla gelir elde etmelerini sağlayan benzersiz bir NFT pazaryeridir. Yolculuk paylaşımı gibi gerçek hayattaki işletmelerle işbirliği, kendi arama motorumuz ile indirimli uçak bileti alma gibi sonsuz sayıda uygulama ise gelecek planlarımızda. İddialı ancak gerçekçi ve ulaşılabilir gerçek hayat uygulamaları yol haritası ile Empire eşsizdir. Sonsuz gerçek hayat kullanım alanı ve değer üretme yaklaşımıyla büyümeye devam ediyoruz. Başaracağımız işler ne kadar büyüdüğümüze bağlı, limitimiz gökyüzü. </p>
+        </div>
+      </div>
+      <div class="mission p-4 d-sm-flex  " data-aos="fade-up">
+        <div class="col-sm-4 p-2 col-md-3 col-xl-2 mission-svg ">
+          <img src="./img/value.png " class="mission-img">
+        </div>
+        <div class="mission-data m-2 m-sm-4 mt-2 col-sm-5 col-md-5 col-xl-4">
+          <h4 class="mission-name" id = "value">Değerlerimiz</h4>
+          <p class="mission-text" id = "valueText">Sorumluluk <br>
+            İşimizi son derece ciddiye alıyoruz. Holderlamıza, ekibimize, kullanıcılarımıza ve takipçilerimie karşı tamamen sorumluluk duygusuyla ve hesap verebilir şekilde ilerliyoruz. Bizimle yaptığınız yatırımlarınıza değer veriyoruz -para, zaman veya güven- ve yatırımınızın başarılı olması bizim sorumluluğumuzda.
+           <br> <br> Dürüstlük<br>
+           Başından beri oldukça açık ve şeffaf olduk, bu DNA’mızın özünde var. Dürüstlükten taviz vermenin herkese zarar verdiğine inanıyoruz. Holderlarımıza, kullanıcılarımıza, çalışanlarımıza ve takipçilerimize karşı her zaman tamamen şeffaf olacağız.
+         <br>   <br>Agresif Büyüme<br>
+         Keep Climbing ( Tırmanmaya Devam Et) mottomuz büyüme iştahımızın ne kadar doymak bilmez olduğunu göstermekte. Bir Empire (İmparatorluk) inşa etmek bu düşünce sistemini gerektirir. Gerçekte de bu olmadan değerli hiçbir şey başarılamamıştır. Dünyada fethedilecek muazzam bir değer olduğuna inanıyoruz ve bunu şimdiye kadar hiçbir tokenin yapmadığı şekilde ele geçirip paraya çevireceğiz. İstiktarlı ve agresif şekilde büyüyeceğiz. İmparatorluğumuz her gün genişlemeye devam edecek.
+           <br> <br> Uyum Sağlayabilirlik
+
+           <br>
+           Uyumlu ve çevik olmadan gelişme sağlayamazsınız. Her projenin zorluklarla karşılaşabileceğini biliyoruz, ancak hayatta kalma ve büyümeyi yalnızca zorluğu hızlı karşılayıp uyum sağlayanlar gerçekleştirebilir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="profile_why_section">
+    <h1 class="p-4  m-4 mt-0 fw-bold text-center text-white" data-aos="fade-up"><span id= "why">Neden </span><span
+      style="color : #24DDDC; padding-left :  12px" id = "whyBlue">Empire Token</span></h1>
+    <div class="container-fluid p-4 justify-content-center Why" data-aos="fade-up">
+      <div class="row  justify-content-center">
+        <div class="col-8 col-sm-5 col-md-3 col-xl-2 why-text " id = "strUseCase">
+          •	Güçlü Kullanım Alanları
+        </div>
+        <div class="col-8 col-sm-5 col-md-3 col-xl-2 why-text" id = "strMkt">
+          	Profesyonel Ekip
+        </div>
+        <div class="col-8 col-sm-5 col-md-3 col-xl-2 why-text" id = "atLp">
+          	Otomatik Eklenen Likidite
+        </div>
+        <div class="col-8  col-sm-5 col-md-3  col-xl-2 why-text" id = "rfi">
+          	RFI Statik Ödülleri
+        </div>
+        <div class="col-8  col-sm-5 col-md-3 col-xl-2  why-text" id = "fv">
+          	Fütüristik Vizyon
+        </div>
+      </div>
+    </div>
+
+    <div class="profiles" data-aos="fade-up">
+      <h1 class="p-4 m-2 mt-0 fw-bold text-white text-center"><span id = "founder">Takımımız
+
+      </span><span style="color : #24DDDC; padding-left :  12px; padding-bottom : 50px;" id = "founderBlue"></span>
+      </h1>
+      <div class="profile p-4 d-sm-flex justify-content-center  ">
+        <div class="col-sm-5 p-2 col-md-4 col-xl-3 profile-svg ">
+          <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
+                <image class="profile-pic" xlink:href="./img/dulla.png" x="-25" width="160" height="110" />
+              </pattern>
+            </defs>
+            <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" />
+          </svg>
+        </div>
+        <div class="profile-data m-2  col-sm-5 col-md-4 col-xl-4 " style="padding-top: 0px;">
+          <h4 class="profile-name" id = "name">Dulla</h4>
+          <h6 class="profile-role" id = "des">Kurucu & CEO</h6>
+          <p class="bio" id = "nameText">Abdullah, ya da kendi sevdiği şekliyle Dulla, Empire’ın kurucusu ve CEO’sudur. 10 yılı aşkın pazarlama deneyimi ve dünyanın önde gelen telekomünikasyon şirketlerinden birinde 5 yıldır yaptığı dijital iletişimi yönetme deneyimi sayesinde dijital dönüşümlere nasıl yaklaşacağımız ve Blockcahin teknolojisindeki fırsatları nasıl yakalayacağımız konusunda farklı yollar ve fikirler keşfetti.  Kişisel hedefi, Empire’ın ideallerini genişletmek ve BSC’den başlayarak modern ekonomik ihtiyaçlara çözüm üretmektir. 
+
+          </p>
+          <div class="footer-icon">
+         <!--
+<a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+         -->   
+            <a href="http://t.me/qur3aneto" class="me-4 text-reset">
+              <i class="fab fa-telegram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/abdullahghandour" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- news and blog -->
+
+  <div class="news-blog" style="background-color: #051427  ;" id="blog-news-1">
+    <h1 class="p-4 m-2 mt-0 fw-bold text-white" id = "blogHead">Blogs</h1>
+    <div class="owl-carousel owl-theme blog">
+
+      <div class="item">
+        <div class="card container" style="background: transparent;">
+          <div class="row">
+            <div class="bg-image hover-overlay ripple col-lg-6" data-mdb-ripple-color="light">
+              <img src="./blogs/blog-1.jpeg" class="blog-img" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body col-lg-6">
+
+              <h5 class="card-title" id = "blog1">Development Update: What’s coming for Empire?
+              </h5>
+              <p class="card-text" id = "blog1Text">
+                Wanna hear what’s next? Empire made a huge rise in the last 24 hours…and we are not even finished. In fact, we’re just getting started!
+                Since the Empire NFT Marketplace is launched, we would like to announce new features that are coming.
+              </p>
+              <div class="d-flex justify-content-between">
+                <span href="#" class="" ">2021-10-11</span>
+                          <a href="https://realempiretoken.medium.com/development-update-whats-coming-for-empire-120d62646377" class="" style="color:aqua" id = "readMore">read more</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card container" style="background: transparent;">
+          <div class="row">
+            <div class="bg-image hover-overlay ripple col-lg-6" data-mdb-ripple-color="light">
+              <img src="./sliders/1.1.jpg" class="blog-img" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body col-lg-6">
+
+              <h5 class="card-title">Empire Token has launched Empire NFT Marketplace
+              </h5>
+              <p class="card-text">
+                Built as the next game-changing NFT dApp, the Empire NFT Marketplace is just the beginning of endless possibilities for Empire.
+                Empire Token has developed a marketplace where you can buy, sell, and trade NFTs. We’re predicting over 10 thousand unique digital assets to be on the site by the end of the year.
+              </p>
+              <div class="d-flex justify-content-between">
+                <span href="#" class="" ">2021-09-04</span>
+                          <a href="https://realempiretoken.medium.com/empire-token-has-launched-empire-nft-marketplace-d3d150df8743" class="" style="color:aqua">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+    </div>
+  </div>
+
+
+ <!--<div class="news-blog" style="background-color: #051427  ;">
+    <h1 class="p-4 m-2 mt-0 fw-bold text-white">News</h1>
+    <div class="owl-carousel owl-theme blog">
+
+    </div>
+  </div>
+
+ --> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/blog-carousel.js"></script>
+
+ 
+
+  <!-- Footer -->
+  <footer class="text-lg-start  text-muted ">
+
+    <!-- Section: Links  -->
+    <!-- Section: Social media -->
+    <section class="d-md-flex  justify-content-between  text-white" style="padding: 0px 20px;">
+      <!-- Left -->
+      <div class="me-6">
+        <img class="logo" src="./img/SideTextLogo.62b7e034.svg">
+      </div>
+
+      <!-- Right -->
+      <div class="p-3">
+        <span class="ready" id = "ready">Başlamaya Hazır mısınız?</span>
+        <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288" class="btn" id = "buy">
+          
+satın al Pancakeswap
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+
+    <!-- Section: Links  -->
+    <section class="" style="width:100%;">
+      <div class="container-fluid  mt-10">
+        <!-- Grid row -->
+        <div class="row foot justify-content-center mt-3" style="width:100%;">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4  mb-4">
+
+
+            <!-- Section: Form -->
+            <section class="">
+              <form action="">
+                <!--Grid row-->
+                <div class="row d-flex ">
+                  <!--Grid column-->
+                  <div class="col-auto" style="padding-bottom: 30px;">
+                    <h3 class="text-white" style="width:80%; font-weight: 400;" id ="sub">
+                      Haber Bültenimize Abone Olun
+                    </h3>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-8" style="padding: 0 ;padding-left:12px;">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4" style="border-bottom: 1px solid #24DDDC; width:100% ">
+                      <input type="email" id="form5Example2" class="form-control" />
+                      <label class="form-label" for="form5Example2">Mail adresi</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-4" style="padding:0">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn subsrcibe-btn" style=" background-color:#24DDDC ;border-bottom-left-radius: 0; margin:0;
+              border-bottom-right-radius: 0; border-bottom: 1.5px solid #24DDDC;">
+                      <i class="fas fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </form>
+            </section>
+            <!-- Section: Form -->
+
+
+
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2  mb-4 text-white">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4">
+              ÜRÜNLER
+            </h6>
+            <p>
+              <a href="http://nft.empiretoken.world" class="text-reset" id = "nft">	NFT Pazaryeri</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset" id="dex">Dex</a>
+            </p>
+           
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mb-4 text-white">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4">
+              ÖNEMLİ BAĞLANTILAR
+            </h6>
+            <p>
+              <a href="#!" class="text-reset" id = "whitepaper">whitepaper</a>
+            </p>
+            <p>
+              <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288" class="text-reset" id = "PancakeSwap">Pancakeswap</a>
+            </p>
+            <p>
+              <a href="https://bscscan.com/token/0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288" class="text-reset" id = "PancakeSwap">BSC Scan</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4 text-white">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4">
+              İLETİŞİM
+            </h6>
+            <p><i class="fab fa-telegram me-3"></i> http://t.me/empiretokenworld</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              admin@empiretoken.world
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+
+    <!-- Section: Links  -->
+    <!-- Section: Social media -->
+    <section class="d-sm-flex  justify-content-between p-4 text-white">
+      <!-- Left -->
+      <div class="me-6">
+        <span>terms & conditions  </span>
+        <span>Privacy Policy</span>
+      </div>
+
+      <!-- Left -->
+
+      <!-- Right -->
+      <div class="footer-icon">
+       <!-- 
+         <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      --> 
+        <a href="https://twitter.com/RealEmpireToken" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://youtube.com/channel/UCYSHk8YsR1jxNR64ezx6q3Q" class="me-4 text-reset">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://instagram.com/empiretoken" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://t.me/empiretokenworld" class="me-4 text-reset">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">Empiretoken.world</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script>
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("menuId").style.opacity = 0;
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("menuId").style.opacity = 1;
+    }
+    function scrollNav() {
+      if (window.pageYOffset >= 100) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load",function()
+    {
+      loader.style.visibility = "hidden";
+      loader.style.opacity = 0;
+    })
+  </script>
+  
+</body>
+
+</html>
