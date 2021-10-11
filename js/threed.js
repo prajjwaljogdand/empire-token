@@ -34,7 +34,6 @@ light_2.rotation.z = 50;
 
 
 loader.load('./logo2.glb', function (glb) {
-    console.log(glb)
     root = glb.scene;
     root.scale.set(0.16, 0.16, 0.2)
     root.position.set(-5.39, 3.15, -0.2)

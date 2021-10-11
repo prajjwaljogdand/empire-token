@@ -50,36 +50,9 @@ nav {
   transition: text-decoration-color 300ms;
   transition-timing-function: ease;
 }
-.button-black {
-  background-color: black;
-  border: aqua solid 1px;
-  border-radius: 5px;
 
-}
 
-.hero-links .button-black:hover
-{
-  background-color: aqua;
- color: #fff; 
-}
-.button {
-  height: 3vh;
-  background-image: linear-gradient(to right, aqua, rgb(113, 122, 241));
-  transition: all 300ms;
-  border-radius: 10px;
-  padding: 1.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  letter-spacing: 1.6px;
-}
-.button a {
-  color: white;
-  text-decoration: none;
-}
-.button:hover {
-  height: 3.5vh;
-  font-size: larger;
-}
+
 .translate p {
   display: inline;
   color: #fff;
