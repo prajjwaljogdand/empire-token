@@ -33,6 +33,15 @@ body{
    
 }
 
+.button-black{
+    background-color: black; 
+    border : 2px solid aquamarine;
+    border-radius: 5px ;
+}
+.button-black:hover {
+    background: linear-gradient(to right,#24DDDC , #7D6DE9); 
+}
+
 .profile_why_section{
     background-image: url('../img/bg.png');
     background-position: center;
