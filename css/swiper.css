@@ -261,6 +261,19 @@ height :  400px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.slide-5{
+    background-image : url('../sliders/slide-5.png') !important;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slide-6{
+    background-image : url('../sliders/yahoo.jpg') !important;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+ 
  
  
      
